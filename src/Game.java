@@ -1,4 +1,3 @@
-
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Font;
@@ -297,7 +296,7 @@ public class Game {
         choix4.setText("");
     }
 
-    public void win (){
+    public void win() {
         position = "win";
         mainTextArea.setText("Vous avez ravagé le gobelin!\n\nVous récuperez un anneau d'argent sur sa dépouille.");
 
@@ -306,11 +305,11 @@ public class Game {
         choix2.setText("");
         choix3.setText("");
         choix4.setText("");
-        
+
     }
 
-    public void loose(){
-        position ="loose";
+    public void loose() {
+        position = "loose";
         mainTextArea.setText("Tu es MORT.\n\n\n<GAME OVER>");
         choix1.setText("Recommencer?");
         choix2.setText("");
@@ -321,9 +320,10 @@ public class Game {
         choix4.setVisible(false);
     }
 
-    public void ending(){
+    public void ending() {
         position = "ending";
-        mainTextArea.setText("Puddingston : Je vous ai vu occire ce gobelin malicieux.\nMerci au nom du village t'es ce bogoss que tu penses être. \n\n<FIN>");
+        mainTextArea.setText(
+                "Puddingston : Je vous ai vu occire ce gobelin malicieux.\nMerci au nom du village t'es ce bogoss que tu penses être. \n\n<FIN>");
 
         choix1.setText("Recommencer?");
         choix2.setText("");
@@ -332,7 +332,6 @@ public class Game {
         choix2.setVisible(false);
         choix3.setVisible(false);
         choix4.setVisible(false);
-        
 
     }
 
@@ -353,11 +352,11 @@ public class Game {
                 case "townGate":
                     switch (yourChoice) {
                         case "c1":
-                        if (silverRing==1){
-                            ending();
-                        }else{
-                            parlerGarde();
-                        }
+                            if (silverRing == 1) {
+                                ending();
+                            } else {
+                                parlerGarde();
+                            }
                             break;
                         case "c2":
                             attaquerGarde();
@@ -405,7 +404,8 @@ public class Game {
                         case "c1":
                             crossRoad();
                             break;
-                        case "c2": est();
+                        case "c2":
+                            est();
                             break;
                         case "c3":
                             townGate();
@@ -460,12 +460,11 @@ public class Game {
                 case "attack":
                     switch (yourChoice) {
                         case "c1":
-                        if (monsterHP<1){
-                            win();
-                        }
-                        else{
-                            attackMonstre();
-                        }
+                            if (monsterHP < 1) {
+                                win();
+                            } else {
+                                attackMonstre();
+                            }
                             break;
 
                         case "c2":
@@ -476,12 +475,11 @@ public class Game {
                 case "attackMonstre":
                     switch (yourChoice) {
                         case "c1":
-                        if (playerHP<1){
-                            loose();
-                        }
-                        else{
-                              attack();
-                        }
+                            if (playerHP < 1) {
+                                loose();
+                            } else {
+                                attack();
+                            }
 
                             break;
 
@@ -489,29 +487,32 @@ public class Game {
                             crossRoad();
                             break;
                     }
-                        break;
-                    case "win":
-                        switch (yourChoice) {
-                            case "c1": crossRoad();
-                                
-                                break;
-                        }
-                        break;
-                    case "loose":
-                        switch (yourChoice) {
-                            case "c1": townGate();
-                                
-                                break;
+                    break;
+                case "win":
+                    switch (yourChoice) {
+                        case "c1":
+                            crossRoad();
 
-                        }
-                        break;
+                            break;
+                    }
+                    break;
+                case "loose":
+                    switch (yourChoice) {
+                        case "c1":
+                            townGate();
 
-                    case "ending":
-                        switch (yourChoice) {
-                            case "c1": townGate();
-                                
-                                break;
-                        }
+                            break;
+
+                    }
+                    break;
+
+                case "ending":
+                    switch (yourChoice) {
+                        case "c1":
+                            townGate();
+
+                            break;
+                    }
             }
         }
     }
