@@ -9,10 +9,11 @@ Un jeu d'aventure textuel avec interface graphique développé en Java/Swing. Da
 
 Comment jouer
 
-Naviguez dans le monde en choisissant différentes options
-Découvrez des armes pour augmenter votre puissance d'attaque
-Combattez le gobelin à l'ouest
-Retournez voir le garde Pudding pour entrer dans la ville
+Ici le but est de rentrer dans la ville.
+
+Naviguez dans le monde en choisissant différentes options rapides.
+Découvrez des armes pour augmenter votre puissance d'attaque.
+Combattez le gobelin.
 
 Installation et exécution
 Prérequis
@@ -70,13 +71,6 @@ Game.java: Contient la logique du jeu et l'interface utilisateur
 bin/: Dossier de sortie pour les fichiers compilés
 lib/: Dossier pour les dépendances (vide pour le moment)
 
-Contribuer
-
-Forkez le projet
-Créez votre branche de fonctionnalité (git checkout -b feature/amazing-feature)
-Validez vos modifications (git commit -m 'Add some amazing feature')
-Poussez vers la branche (git push origin feature/amazing-feature)
-Ouvrez une Pull Request
 
 Licence
 Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
