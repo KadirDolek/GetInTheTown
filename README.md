@@ -1,32 +1,85 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+            GetinTheTown
 
 
 
-## Comment exécuter ce programme
+Un jeu d'aventure textuel avec interface graphique développé en Java/Swing. Dans ce jeu, vous devez vaincre un gobelin pour pouvoir entrer dans la ville gardée par Messire Pudding.
 
-1. Télécharger Java :  
-   [https://www.oracle.com/java/technologies/javase-downloads.html](https://www.oracle.com/java/technologies/javase-downloads.html)
 
-2. Compiler :
-   ```bash
-   javac src/Main.java
 
+
+Comment jouer
+
+Naviguez dans le monde en choisissant différentes options
+Découvrez des armes pour augmenter votre puissance d'attaque
+Combattez le gobelin à l'ouest
+Retournez voir le garde Pudding pour entrer dans la ville
+
+Installation et exécution
+Prérequis
+
+Java JDK 8 ou supérieur installé sur votre machine
+
+Option 1: Télécharger et exécuter le JAR
+
+Téléchargez le fichier GetinTheTown.jar depuis la page des releases
+Double-cliquez sur le fichier JAR ou exécutez la commande:
+java -jar GetinTheTown.jar
+
+
+Option 2: Compiler et exécuter depuis les sources
+Pour Linux/macOS:
+
+Clonez le dépôt:
+git clone https://github.com/votre-username/GetinTheTown.git
+cd GetinTheTown
+
+Rendez le script d'exécution exécutable:
+chmod +x run.sh
+
+Exécutez le script:
+./run.sh
+
+
+Pour Windows:
+
+Clonez le dépôt:
+git clone https://github.com/votre-username/GetinTheTown.git
+cd GetinTheTown
+
+Double-cliquez sur run.bat ou exécutez-le depuis la ligne de commande:
+run.bat
+
+
+Compilation manuelle:
+
+Compilez les fichiers sources:
+javac -d bin src/*.java
+
+Exécutez le programme:
+java -cp bin Main
+
+
+Structure du projet
+
+src/: Contient les fichiers source Java
+
+Main.java: Point d'entrée du programme
+Game.java: Contient la logique du jeu et l'interface utilisateur
+
+
+bin/: Dossier de sortie pour les fichiers compilés
+lib/: Dossier pour les dépendances (vide pour le moment)
+
+Contribuer
+
+Forkez le projet
+Créez votre branche de fonctionnalité (git checkout -b feature/amazing-feature)
+Validez vos modifications (git commit -m 'Add some amazing feature')
+Poussez vers la branche (git push origin feature/amazing-feature)
+Ouvrez une Pull Request
+
+Licence
+Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
+Dolek Kadir
 
 
